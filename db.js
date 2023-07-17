@@ -1,6 +1,7 @@
 class Location {
-  constructor(name, lat, lon) {
+  constructor(name="", alias="", lat=null, lon=null) {
     this.name = name;
+    this.alias = alias;
     this.lat = lat;
     this.lon = lon;
   }
@@ -15,36 +16,43 @@ const skill = {
 
 const location = {
   minerd: new Location(
-    "Ministerio de Educación de la República Dominicana (MINERD)",
+    "Ministerio de Educación de la República Dominicana",
+    "MINERD",
     18.4609793,
     -69.9117334
   ),
   jce: new Location(
-    "Junta Central Electoral (JCE)",
+    "Junta Central Electoral",
+    "JCE",
     18.4461085,
     -69.9846247
   ),
   perezMorales: new Location(
     "Arq. Pérez Morales & Asocs",
+    null,
     18.4771156,
     -69.9432694
   ),
   incocomsa: new Location(
+    "",
     "INCOCOMSA",
     null,
     null,
   ),
   roa: new Location(
     "Roa & Asocs. Edificio Santanita",
+    "",
     18.484127,
     -69.9265328,
   ),
   sercitec: new Location(
+    "",
     "SERCITEC",
     18.4703488,
     -69.9444506
   ),
   isc: new Location(
+    "",
     "ISC (Division Westinghouse)",
     18.4739986,
     -69.9603906,
@@ -101,7 +109,7 @@ const data = {
       start_date: "2020",
       end_date: "2023",
       title: "",
-      location: new Location("", "", ""),
+      location: new Location(),
       description: [
         "Diseño y ejecución edificio 3 niveles con supervisión y licencia de todos los procesos por Obras Publicas, 1 apartamento 1er nivel con 2 parqueos, 2 apartamentos por piso en 2do y 3er nivel con 1 parqueo por apartamento, área recreativa común en azotea.",
       ],
@@ -188,28 +196,28 @@ const data = {
       start_date: "1975",
       end_date: "1981",
       title: "Bachiller en Ciencias y Letras",
-      location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi (UASD)", "", ""),
+      location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
       description: [],
     },
     {
       start_date: "1996",
       end_date: "1996",
       title: "Ingles Básico y Avanzado",
-      location: new Location("Instituto Cultural Dominico-Americano (ICDA)", "", ""),
+      location: new Location("Instituto Cultural Dominico-Americano", "ICDA"),
       description: [],
     },
     {
       start_date: "1983",
       end_date: "1989",
       title: "Arquitecto",
-      location: new Location("Universidad Autónoma de Santo Domingo (UASD)", "", ""),
+      location: new Location("Universidad Autónoma de Santo Domingo", "UASD"),
       description: [],
     },
     {
       start_date: "1989",
       end_date: "1989",
       title: "Técnico Cartógrafo",
-      location: new Location("Escuela Cartográfica del DMA-IAGS, Fort Clayton, Panamá ", "", ""),
+      location: new Location("Escuela Cartográfica del DMA-IAGS, Fort Clayton, Panamá"),
       description: [
         "Mejor puntuación de la clase"
       ],
