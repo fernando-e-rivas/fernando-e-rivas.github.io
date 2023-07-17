@@ -46,8 +46,8 @@ const location = {
   ),
   isc: new Location(
     "ISC (Division Westinghouse)",
-    null,
-    null,
+    18.4739986,
+    -69.9603906,
   ),
   marina: new Location(
     "Marina de Guerra",
