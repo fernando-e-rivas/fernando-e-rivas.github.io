@@ -3,13 +3,16 @@
     <title>Fernando Rivas</title>
   </head>
   <body>
-    <main class="app">
+    <main id="app">
       <section class="resume">
         <header>
-          <h1>{{ name }} {{familyName}}</h1>
-          <p>{{ title }}</p>
+          <h1>{{ data.name }} {{ data.name_family }}</h1>
+          <p>{{ data.title }}</p>
         </header>
       </section>
     </main>
+
+    <script type="text/javascript" src="scripts/vue_3.2.37_vue_global_prod.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>
