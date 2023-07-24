@@ -109,7 +109,7 @@ const data = {
   email: "frivas600@gmail.com",
   title: "Arquitecto",
   summary: [
-    "Aplicar y expandir mis conocimientos, produciendo resultados sólidos, especialmente en el área de Diseño, Planificación, Supervisión y Construcción.  Manejo cuidadoso de la puntualidad y los plazos, así como la relación entre los diversos integrantes de un equipo, buscando siempre la excelencia en los resultados.",
+    "Aplicar y expandir mis conocimientos, produciendo resultados sólidos, especialmente en el área de Diseño, Planificación, Supervisión y Construcción. Manejo cuidadoso de la puntualidad y los plazos, así como la relación entre los diversos integrantes de un equipo, buscando siempre la excelencia en los resultados.",
     "Interactuar, orientar, planificar y coordinar con diversos profesionales para la integración a la obra civil de manera que haya resultados óptimos."
   ],
   skills: [

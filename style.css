@@ -47,6 +47,7 @@ dd {
   font-weight: 400;
   margin: 0;
   margin-block-end: var(--space-between-inline-items);
+  font-size: 0.75rem;
 }
 
 ul {
@@ -81,6 +82,10 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.sr-only {
+  display: none;
 }
 
 .row {

@@ -28,7 +28,9 @@
         <header>
           <h1>{{name}} {{name_family}}</h1>
           <p class="title">{{title}}</p>
-          <p>{{summary}}</p>
+          {{#each summary}}
+            <p class="sr-only">{{this}}</p>
+          {{/each}}
         </header>
         <div class="row">
           <div class="column short">
@@ -83,7 +85,7 @@
           </div>
 
           <div class="column">
-            <h2>Experiencia</h2>
+            <h2 class="sr-only">Experiencia</h2>
             {{#each experience}}
               <article>
                 
