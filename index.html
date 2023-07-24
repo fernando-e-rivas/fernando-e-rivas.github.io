@@ -1,18 +1,123 @@
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Fernando Rivas</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://fernando-e-rivas.github.io/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="256x256" href="https://fernando-e-rivas.github.io/img/favicon-256x256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://fernando-e-rivas.github.io/img/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://fernando-e-rivas.github.io/img/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://fernando-e-rivas.github.io/img/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fernando-e-rivas.github.io/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="https://fernando-e-rivas.github.io/img/favicon-24x24.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fernando-e-rivas.github.io/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fernando-e-rivas.github.io/img/favicon-180x180.png">
+    
+    <meta name="msapplication-TileImage" content="https://fernando-e-rivas.github.io/img/favicon-128x128.png">
+    <meta property="og:image" content="https://fernando-e-rivas.github.io/img/preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main id="app">
+    <main id="app"></main>
+    <script id="template" type="text/template">
       <section class="resume">
         <header>
-          <h1>{{ data.name }} {{ data.name_family }}</h1>
-          <p>{{ data.title }}</p>
+          <h1>{{ name }} {{ name_family }}</h1>
+          <p>{{ title }}</p>
+          <p>{{ summary }}</p>
         </header>
+        <div class="row">
+          <div class="column">
+            <dl>
+              <dt>Locación</dt>
+              <dt>
+                <a
+                  href="{{ location.url }}"
+                  target="_blank"
+                >
+                  {{ location.display }}
+                </a>
+              </dt>
+              <dt>Website</dt>
+              <dt>
+                <a
+                  href="{{ website.url }}"
+                  target="_blank"
+                >
+                  {{ website.display }}
+                </a>
+              </dt>
+              <dt>Correo Electrónico</dt>
+              <dt>
+                <a
+                  href="mailto={{ email }}"
+                  target="_blank"
+                >
+                  {{ email }}
+                </a>
+              </dt>
+              <dt>Teléfono</dt>
+              <dt>
+                <a
+                  href="tel={{ phone.iso }}"
+                  target="_blank"
+                >
+                  {{ phone.display }}
+                </a>
+              </dt>
+            </dl>
+            <ul>
+              {{ #each skills }}
+                <li>
+                  {{ this }}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="column">
+            {{ #each experience }}
+              <article>
+                <h3>{{ title }}</h3>
+                <p>{{ description }}</p>
+                <p>
+                  <time
+                    datetime="{{ start_date.iso }}"
+                    title="{{ start_date.iso }}"
+                  >
+                    {{ start_date.display }}
+                  </time>
+                  {{ #if end_date }}
+                    -
+                    <time
+                      datetime="{{ end_date.iso }}"
+                      title="{{ end_date.iso }}"
+                    >
+                      {{ end_date.display }}
+                    </time>
+                  {{/if}}
+                </p>
+                <p>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/@{{ location.lat }},{{ location.lon }},17z"
+                  >
+                    {{ location.name }}
+                    {{ #if location.alias }}
+                      ({{ location.alias }})
+                    {{/if}}
+                  </a>
+                </p>
+              </article>
+            {{/each}}
+          </div>
+        </div>
       </section>
-    </main>
-
-    <script type="text/javascript" src="scripts/vue_3.2.37_vue_global_prod.min.js"></script>
+    </script>
+    <script type="text/javascript" src="scripts/template7.min.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>

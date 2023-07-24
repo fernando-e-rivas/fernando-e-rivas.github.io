@@ -12,6 +12,24 @@ class Location {
   }
 }
 
+class Phone {
+  constructor(phone){
+    this.display = phone;
+  }
+  get iso() {
+    return this.display.replace(/-/g, '');
+  }
+}
+
+class DateTime {
+  constructor(date){
+    this.display = date;
+  }
+  get iso() {
+    return new Date(this.display);
+  }
+}
+
 const skill = {
   autocad: "Autocad",
   word: "Microsoft Word",
@@ -67,15 +85,24 @@ const place = {
     null,
     18.4470377,
     -69.9236394,
-  )
+  ),
 }
 
 const data = {
   name: "Fernando",
   name_middle: "Euclides",
   name_family: "Rivas",
-  dob: "9/03/1964",
-  phone: "809-653-4124",
+  dob: new DateTime("9/03/1964"),
+  website: {
+    url: "https://fernando-e-rivas.github.io/",
+    display: "fernando-e-rivas.github.io",
+  },
+  location: {
+    url: "https://www.google.com/maps/place/santo+domingo/data=!4m2!3m1!1s0x8eaf89f1107ea5ab:0xd6c587b82715c164?sa=X&ved=2ahUKEwjdpfjjw6aAAxUvAjQIHWr4C_kQ8gF6BAgREAA&ved=2ahUKEwjdpfjjw6aAAxUvAjQIHWr4C_kQ8gF6BAgVEAE",
+    display: "Santo Domingo",
+  },
+  phone: new Phone("809-653-4124"),
+  email: "frivas600@gmail.com",
   title: "Arquitecto",
   summary: [
     "Aplicar y expandir mis conocimientos, produciendo resultados sólidos, especialmente en el área de Diseño, Planificación, Supervisión y Construcción.  Manejo cuidadoso de la puntualidad y los plazos, así como la relación entre los diversos integrantes de un equipo, buscando siempre la excelencia en los resultados.",
@@ -91,7 +118,7 @@ const data = {
   ],
   experience: [
     {
-      start_date: "04/2011",
+      start_date: new DateTime("01/04/2011"),
       end_date: "",
       title: "Supervisor Nacional",
       location: place.minerd,
@@ -100,7 +127,7 @@ const data = {
       ],
     },
     {
-      start_date: "04/2011",
+      start_date: new DateTime("01/04/2011"),
       end_date: "",
       title: "Encargado Supervisión y Diseño",
       location: place.minerd,
@@ -110,8 +137,8 @@ const data = {
       ],
     },
     {
-      start_date: "2020",
-      end_date: "2023",
+      start_date: new DateTime("01/01/2020"),
+      end_date: new DateTime("01/01/2023"),
       title: "",
       location: new Location(),
       description: [
@@ -119,8 +146,8 @@ const data = {
       ],
     },
     {
-      start_date: "02/2007",
-      end_date: "01/2011",
+      start_date: new DateTime("01/02/2007"),
+      end_date: new DateTime("01/01/2011"),
       title: "Coordinador Unidad Especial de Remodelación de Oficialías",
       location: place.jce,
       description: [
@@ -133,8 +160,8 @@ const data = {
       ],
     },
     {
-      start_date: "04/1994",
-      end_date: "02/2007",
+      start_date: new DateTime("01/04/1994"),
+      end_date: new DateTime("01/02/2007"),
       title: "",
       location: place.perezMorales,
       description: [
@@ -151,8 +178,8 @@ const data = {
       ],
     },
     {
-      start_date: "1994",
-      end_date: "1996",
+      start_date: new DateTime("01/01/1994"),
+      end_date: new DateTime("01/01/1996"),
       title: "Encargado Departamento de Dibujo",
       location: place.incocomsa,
       description: [
@@ -161,8 +188,8 @@ const data = {
       ],
     },
     {
-      start_date: "1993",
-      end_date: "1994",
+      start_date: new DateTime("01/01/1993"),
+      end_date: new DateTime("01/01/1994"),
       title: "Colaborador Arq. Líbrael Guzmán, (Encargado de Taller)",
       location: place.roa,
       description: [
@@ -170,8 +197,8 @@ const data = {
       ],
     },
     {
-      start_date: "1992",
-      end_date: "1993",
+      start_date: new DateTime("01/01/1992"),
+      end_date: new DateTime("01/01/1993"),
       title: "Dibujante",
       location: place.sercitec,
       description: [
@@ -179,8 +206,8 @@ const data = {
       ],
     },
     {
-      start_date: "1990",
-      end_date: "1992",
+      start_date: new DateTime("01/01/1990"),
+      end_date: new DateTime("01/01/1992"),
       title: "Dibujante",
       location: place.isc,
       description: [
@@ -188,8 +215,8 @@ const data = {
       ],
     },
     {
-      start_date: "1985",
-      end_date: "1990",
+      start_date: new DateTime("01/01/1985"),
+      end_date: new DateTime("01/01/1990"),
       title: "Dibujante",
       location: place.marina,
       description: [
@@ -197,29 +224,29 @@ const data = {
       ],
     },
     {
-      start_date: "1975",
-      end_date: "1981",
+      start_date: new DateTime("01/01/1975"),
+      end_date: new DateTime("01/01/1981"),
       title: "Bachiller en Ciencias y Letras",
       location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
       description: [],
     },
     {
-      start_date: "1996",
-      end_date: "1996",
+      start_date: new DateTime("01/01/1996"),
+      end_date: new DateTime("01/01/1996"),
       title: "Ingles Básico y Avanzado",
       location: new Location("Instituto Cultural Dominico-Americano", "ICDA"),
       description: [],
     },
     {
-      start_date: "1983",
-      end_date: "1989",
+      start_date: new DateTime("01/01/1983"),
+      end_date: new DateTime("01/01/1989"),
       title: "Arquitecto",
       location: new Location("Universidad Autónoma de Santo Domingo", "UASD"),
       description: [],
     },
     {
-      start_date: "1989",
-      end_date: "1989",
+      start_date: new DateTime("01/01/1989"),
+      end_date: new DateTime("01/01/1989"),
       title: "Técnico Cartógrafo",
       location: new Location("Escuela Cartográfica del DMA-IAGS, Fort Clayton, Panamá"),
       description: [
@@ -231,17 +258,17 @@ const data = {
     {
       name: "Lic. Lorenza Bencosme",
       position: "Directora Regional, Zona Metropolitana Oeste, Banco de Reservas",
-      tel: "809-604-4763",
+      tel: new Phone("809-604-4763"),
     },
     {
       name: "Lic. Euri Cabral",
       position: "Comunicador, Economista, Escritor.",
-      tel: "809-803-5474",
+      tel: new Phone("809-803-5474"),
     },
     {
       name: "Lic. Yuri Rodriguez",
       position: "Exdirector de INABIMA",
-      tel: "829-979-0167",
+      tel: new Phone("829-979-0167"),
     },
   ]
 }
