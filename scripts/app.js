@@ -23,7 +23,11 @@ class Phone {
 
 class DateTime {
   constructor(date = "Actual"){
-    this.display = date;
+    if(date === "Actual"){
+      this.display = date;
+    } else {
+      this.display = new Date(date).getFullYear();
+    }
   }
   get iso() {
     if(this.display === "Actual"){
