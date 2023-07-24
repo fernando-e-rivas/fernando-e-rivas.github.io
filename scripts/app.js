@@ -228,12 +228,14 @@ const data = {
       ],
     },
     {
+      hidden: true,
       start_date: new DateTime("01/01/1975"),
       end_date: new DateTime("01/01/1981"),
       title: "Bachiller en Ciencias y Letras",
       location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
     },
     {
+      hidden: true,
       start_date: new DateTime("01/01/1996"),
       end_date: new DateTime("01/01/1996"),
       title: "Ingles Básico y Avanzado",
