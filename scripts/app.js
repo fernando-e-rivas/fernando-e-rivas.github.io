@@ -22,11 +22,15 @@ class Phone {
 }
 
 class DateTime {
-  constructor(date){
+  constructor(date = "Actual"){
     this.display = date;
   }
   get iso() {
-    return new Date(this.display);
+    if(this.display === "Actual"){
+      return new Date()
+    } else {
+      return new Date(this.display);
+    }
   }
 }
 
@@ -119,7 +123,7 @@ const data = {
   experience: [
     {
       start_date: new DateTime("01/04/2011"),
-      end_date: "",
+      end_date: new DateTime(),
       title: "Supervisor Nacional",
       location: place.minerd,
       description: [
@@ -128,7 +132,7 @@ const data = {
     },
     {
       start_date: new DateTime("01/04/2011"),
-      end_date: "",
+      end_date: new DateTime(),
       title: "Encargado Supervisión y Diseño",
       location: place.minerd,
       description: [
@@ -228,21 +232,18 @@ const data = {
       end_date: new DateTime("01/01/1981"),
       title: "Bachiller en Ciencias y Letras",
       location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
-      description: [],
     },
     {
       start_date: new DateTime("01/01/1996"),
       end_date: new DateTime("01/01/1996"),
       title: "Ingles Básico y Avanzado",
       location: new Location("Instituto Cultural Dominico-Americano", "ICDA"),
-      description: [],
     },
     {
       start_date: new DateTime("01/01/1983"),
       end_date: new DateTime("01/01/1989"),
       title: "Arquitecto",
       location: new Location("Universidad Autónoma de Santo Domingo", "UASD"),
-      description: [],
     },
     {
       start_date: new DateTime("01/01/1989"),
