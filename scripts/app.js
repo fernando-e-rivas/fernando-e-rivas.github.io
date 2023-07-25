@@ -39,7 +39,7 @@ class DateTime {
 }
 
 const skill = {
-  autocad: "Autocad",
+  autocad: "Autodesk Autocad",
   word: "Microsoft Word",
   excel: "Microsoft Excel",
   powerPoint: "Microsoft Powerpoint",
