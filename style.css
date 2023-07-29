@@ -178,16 +178,16 @@ a {
     font-size: 9px;
   }
 
-  .title {
-    font-size: 11px;
-  }
-
-  .timestamp {
-    font-size: 8px;
-  }
-
   .resume {
     padding-inline: 2rem;
+
+    & .title {
+      font-size: 11px;
+    }
+  
+    & .timestamp {
+      font-size: 8px;
+    }
 
     & header {
       padding: 1rem;
