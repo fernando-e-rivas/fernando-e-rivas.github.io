@@ -161,6 +161,14 @@ a {
     font-size: 9px;
   }
 
+  .title {
+    font-size: 11px;
+  }
+
+  .timestamp {
+    font-size: 8px;
+  }
+
   .resume {
     width: auto;
     padding-inline: 2rem;
