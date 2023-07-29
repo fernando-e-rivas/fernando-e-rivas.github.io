@@ -162,6 +162,14 @@ a {
   }
 
   .resume {
+    width: auto;
+    padding: 2rem;
+
+    & header {
+      padding: 1rem;
+      margin-block-end: 1rem;
+    }
+
     & .column.short {
       flex-basis: 25%;
       width: 25%;
