@@ -145,6 +145,7 @@ const data = {
       ],
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/2020"),
       end_date: new DateTime("01/01/2023"),
       title: "",
