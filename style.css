@@ -97,7 +97,7 @@ a {
   width: 100%;
   max-width: 900px;
   margin: auto;
-  padding: var(--space-between-block-items);
+  padding-inline: var(--space-between-block-items);
 
   & header {
     text-align: center;
@@ -163,7 +163,7 @@ a {
 
   .resume {
     width: auto;
-    padding: 2rem;
+    padding-inline: 2rem;
 
     & header {
       padding: 1rem;
