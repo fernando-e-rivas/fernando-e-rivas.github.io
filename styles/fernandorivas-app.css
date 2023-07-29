@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500&display=swap');
+
+html,
+body {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  --space-between-block-items: 1rem;
+  --space-between-inline-items: 0.5rem;
+  --accent-color: #382e66;
+  --border-color: #ccc;
+}
+
+.sr-only {
+  display: none;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+}

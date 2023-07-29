@@ -1,0 +1,9 @@
+* { border: 1px solid #f0f;}
+
+@import url("fernandorivas-app.css");
+
+section.portfolio {
+  max-width: 900px;
+  margin: auto;
+  padding-inline: var(--space-between-block-items);
+}
