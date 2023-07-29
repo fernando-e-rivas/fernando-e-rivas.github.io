@@ -51,7 +51,7 @@ dd {
 }
 
 ul {
-  padding-left: 1rem;
+  padding-left: var(--space-between-block-items);
 }
 
 h1 {
@@ -124,5 +124,45 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #aaa;
+  }
+}
+
+/* --------------- Print --------------- */
+
+@media print {
+  html,
+  body {
+    --space-between-block-items: 8px;
+    --space-between-inline-items: 6px;
+  }
+
+  .print-hidden {
+    display: none;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 11px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  h2,
+  h3,
+  p,
+  li,
+  dt,
+  dd {
+    font-size: 9px;
+  }
+
+  @page {
+    size: 8.5in 14in;
+    margin: 5mm;
   }
 }

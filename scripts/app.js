@@ -196,6 +196,7 @@ const data = {
       ],
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/1993"),
       end_date: new DateTime("01/01/1994"),
       title: "Colaborador Arq. Líbrael Guzmán, (Encargado de Taller)",
@@ -205,6 +206,7 @@ const data = {
       ],
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/1992"),
       end_date: new DateTime("01/01/1993"),
       title: "Dibujante",
@@ -214,6 +216,7 @@ const data = {
       ],
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/1990"),
       end_date: new DateTime("01/01/1992"),
       title: "Dibujante",
@@ -223,6 +226,7 @@ const data = {
       ],
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/1985"),
       end_date: new DateTime("01/01/1990"),
       title: "Dibujante",
@@ -232,14 +236,14 @@ const data = {
       ],
     },
     {
-      hidden: true,
+      printHidden: true,
       start_date: new DateTime("01/01/1975"),
       end_date: new DateTime("01/01/1981"),
       title: "Bachiller en Ciencias y Letras",
       location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
     },
     {
-      hidden: true,
+      printHidden: true,
       start_date: new DateTime("01/01/1996"),
       end_date: new DateTime("01/01/1996"),
       title: "Ingles Básico y Avanzado",
@@ -252,6 +256,7 @@ const data = {
       location: new Location("Universidad Autónoma de Santo Domingo", "UASD"),
     },
     {
+      printHidden: true,
       start_date: new DateTime("01/01/1989"),
       end_date: new DateTime("01/01/1989"),
       title: "Técnico Cartógrafo",

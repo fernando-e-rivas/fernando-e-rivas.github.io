@@ -87,7 +87,7 @@
           <div class="column">
             <h2 class="sr-only">Experiencia</h2>
             {{#each experience}}
-              <article {{#if hidden}}class="sr-only"{{/if}}>
+              <article {{#if printHidden}}class="print-hidden"{{/if}}>
                 <p class="timestamp">
                   <time
                     datetime="{{start_date.iso}}"
