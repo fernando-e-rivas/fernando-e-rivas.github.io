@@ -94,7 +94,6 @@ a {
 }
 
 .resume {
-  width: 100%;
   max-width: 900px;
   margin: auto;
   padding-inline: var(--space-between-block-items);
@@ -124,6 +123,24 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #aaa;
+  }
+}
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resume {
+    & .column.short {
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
   }
 }
 
@@ -170,7 +187,6 @@ a {
   }
 
   .resume {
-    width: auto;
     padding-inline: 2rem;
 
     & header {
