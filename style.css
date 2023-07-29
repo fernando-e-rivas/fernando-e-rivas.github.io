@@ -161,8 +161,17 @@ a {
     font-size: 9px;
   }
 
+  .resume {
+    & .column.short {
+      flex-basis: 25%;
+      width: 25%;
+      max-width: 25%;
+      min-width: 25%;
+    }
+  }
+
   @page {
-    size: 8.5in 14in;
+    size: 8.5in 11in;
     margin: 5mm;
   }
 }
