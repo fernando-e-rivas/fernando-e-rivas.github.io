@@ -29,17 +29,19 @@
           <article>
             <img src="{{cover.url}}" alt="{{cover.description}}">
             <h2>{{name}}</h2>
-            {{#sections }}
-              {{#imgs}}
-                <img src="{{url}}" alt="{{description}}">
-              {{/imgs}}
-              {{#content}}
-                <p>{{this}}</p>
-              {{/content}}
-              {{#cads}}
-                <img src="{{url}}" alt="{{description}}">
-              {{/cads}}
-            {{/sections}}
+            <div class="container">
+              {{#sections }}
+                {{#imgs}}
+                  <img src="{{url}}" alt="{{description}}">
+                {{/imgs}}
+                {{#content}}
+                  <p>{{this}}</p>
+                {{/content}}
+                {{#cads}}
+                  <img src="{{url}}" alt="{{description}}">
+                {{/cads}}
+              {{/sections}}
+            </div>
           </article>
         {{/each}}
       </section>

@@ -1,10 +1,6 @@
 @import url("fernandorivas-app.css");
 
 section.resume {
-  max-width: 900px;
-  margin: auto;
-  padding-inline: var(--space-between-block-items);
-
   & h1 {
     margin: 0;
   }
@@ -134,9 +130,11 @@ section.resume {
     display: none;
   }
 
-  .resume {
-    padding-inline: 2rem;
+  .container {
+    max-width: 700px;
+  }
 
+  section.resume {
     & h1 {
       font-size: 22px;
     }
@@ -163,7 +161,7 @@ section.resume {
     }
   
     & .timestamp {
-      font-size: 8px;
+      font-size: 7px;
     }
 
     & header {
