@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -27,7 +28,7 @@
       <section class="portfolio">
         {{#each projects}}
           <article>
-            <img src="{{cover.url}}" alt="{{cover.description}}">
+            <mr-perspective mr-url="{{cover.url}}" area-title="{{cover.description}}"></mr-perspective>
             <h2>{{name}}</h2>
             <div class="container">
               {{#sections }}
@@ -46,7 +47,6 @@
         {{/each}}
       </section>
     </script>
-    <script type="text/javascript" src="scripts/template7.min.js"></script>
-    <script type="text/javascript" src="scripts/fernandorivas-app.js"></script>
+    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
