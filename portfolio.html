@@ -20,7 +20,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <link rel="stylesheet" href="styles/fernandorivas-portfolio.css">
+    <link rel="stylesheet" href="styles/sections/portfolio.css">
+    <script type="module" src="scripts/app.js"></script>
   </head>
   <body>
     <main id="app"></main>
@@ -28,13 +29,23 @@
       <section class="portfolio">
         {{#each projects}}
           <article>
-            <mr-perspective mr-url="{{cover.url}}" area-title="{{cover.description}}"></mr-perspective>
-            <h2>{{name}}</h2>
+            <div class="cover">
+              <div class="shade"></div>
+              <mr-perspective
+                mr-url="{{cover.url}}"
+                mr-width="1920"
+                mr-height="1080"
+                area-title="{{cover.description}}">
+              </mr-perspective>
+              <h2 class="title">{{name}}</h2>
+            </div>
             <div class="container">
               {{#sections }}
-                {{#imgs}}
-                  <img src="{{url}}" alt="{{description}}">
-                {{/imgs}}
+                <div class="gallery">
+                  {{#imgs}}
+                    <img src="{{url}}" alt="{{description}}">
+                  {{/imgs}}
+                </div>
                 {{#content}}
                   <p>{{this}}</p>
                 {{/content}}
@@ -47,6 +58,5 @@
         {{/each}}
       </section>
     </script>
-    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>

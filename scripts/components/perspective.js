@@ -1,19 +1,26 @@
 export default class Perspective extends HTMLElement {
   constructor() {
     super();
+
+    this.innerHTML = `
+      <div class="img"></div>
+    `;
   };
 
+
   updateComponent() {
+    const imgNode = this.querySelector(".img");
     const bgcolor = this.getAttribute(`mr-bgcolor`);
     const position = this.getAttribute(`mr-position`);
-    const size = this.getAttribute(`mr-size`);
+    const width = this.getAttribute(`mr-width`);
+    const height = this.getAttribute(`mr-height`);
     const url = this.getAttribute(`mr-url`);
 
-    this.style.backgroundImage = `url("${ url }")`,
-    this.style.backgroundPosition = `${ position || "top" }`;
-    this.style.backgroundColor = `${ bgcolor || "#444" }`;
-    this.style.width = `${ 200 * size || 1 }`;
-    this.style.width = `${ 300 * size || 1 }`;
+    imgNode.style.backgroundImage = `url("${ url }")`,
+    imgNode.style.backgroundPosition = `${ position || "top" }`;
+    imgNode.style.backgroundColor = `${ bgcolor || "#444" }`;
+    imgNode.style.width = `${ width || 200 }px`;
+    imgNode.style.height = `${ height || 200 }px`;
   };
 
   connectedCallback() {
@@ -24,7 +31,8 @@ export default class Perspective extends HTMLElement {
     return [
       'mr-bgcolor',
       'mr-position',
-      'mr-size',
+      'mr-width',
+      'mr-height',
       'mr-url',
     ];
   };

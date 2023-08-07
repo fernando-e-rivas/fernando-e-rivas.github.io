@@ -1,0 +1,72 @@
+@import url("../main.css");
+@import url("../components/perspective.css");
+
+section.portfolio {
+  & article {
+    & .container {
+      padding-block: 2rem;
+    }
+
+    & .cover {
+      height: 620px;
+      background-color: #232730;
+      /* #b3e86a; */
+      overflow: hidden;
+      position: relative;
+
+      & mr-perspective {
+        transition: transform 1000ms ease;
+        bottom: -100%;
+        left: -8%;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      & .title {
+        text-transform: uppercase;
+        color: #ddd;
+        font-size: 3rem;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        margin: 0;
+        z-index: 3;
+      }
+
+      & .shade {
+        transition: opacity 1000ms ease;
+        background-color: #000;
+        position: absolute;
+        inset: 0;
+        opacity: .5;
+        z-index: 2;
+      }
+
+      &:hover {
+        & mr-perspective {
+          transform: translateY(-80px);
+        }
+
+        & .shade {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  & .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+    & img {
+      width: calc(100% / 3 - 11px);
+    }
+  }
+}
