@@ -80,13 +80,15 @@ section.portfolio {
   }
 
   & .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-block: 2.5rem;
-    text-align: center;
+    gap: 2rem;
     
     & img {
-      display: inline-block;
-      margin: 1rem;
-      width: calc(100% / 3 - 2.2rem);
+      width: calc(100% / 3 - 1.4rem);
     }
   }
 
