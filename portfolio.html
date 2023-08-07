@@ -56,22 +56,33 @@
             <div class="container">
               {{#sections }}
                 <div class="content">
-                  {{#content}}
-                    <p>{{this}}</p>
-                  {{/content}}
+                  {{#if title}}
+                    <h3>{{title}}</h3>
+                  {{/if}}
+                  {{#if content}}
+                    {{#content}}
+                      <p>{{this}}</p>
+                    {{/content}}
+                  {{/if}}
                 </div>
               <div class="gallery">
                 {{#imgs}}
                   <img src="{{url}}" alt="{{description}}">
                 {{/imgs}}
               </div>
+              {{/sections}}
+            </div>
+
+            {{#if cads}}
+              <div class="container-max">
                 <div class="drawings">
+                  <h3>Planos</h3>
                   {{#cads}}
                     <img src="{{url}}" alt="{{description}}">
                   {{/cads}}
                 </div>
-              {{/sections}}
-            </div>
+              </div>
+            {{/if}}
           </article>
         {{/each}}
       </section>
