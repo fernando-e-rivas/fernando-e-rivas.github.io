@@ -1,12 +1,13 @@
 import "./modules/template7.min.js";
 import Perspective from "./components/perspective.js";
+import inabima from "./projects/inabima.js";
 
 window.customElements.define('mr-perspective', Perspective);
 
-import projects from "./db/projects.js";
-
 const data = {
-  projects,
+  projects: [
+    inabima,
+  ],
 };
 
 const app = document.getElementById('app');
