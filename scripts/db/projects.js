@@ -3,7 +3,7 @@ export default [
     name: "Instituto de Bienestar Magisterial (INABIMA)",
     description: "Diseño, Coordinación y Supervisión General del Centro Odontológico, Apoyo Emocional, Salón de Eventos, Salón Consejo de Directores y Oficinas Administrativas del Instituto Nacional de Bienestar Magisterial (INABIMA), en Av. Pedro Henríquez Ureña No. 73 (Plaza Aurora).",
     cover: {
-      url: "https://placehold.co/1920/1080",
+      url: "https://placehold.co/1920x1080",
       description: "Preview del Proyecto",
     },
     sections: [

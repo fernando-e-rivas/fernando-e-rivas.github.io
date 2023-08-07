@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="630">
 
     <link rel="stylesheet" href="styles/sections/resume.css">
-    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/resume.js"></script>
   </head>
   <body>
     <main id="app"></main>
@@ -89,7 +89,7 @@
   
             <div class="column">
               <h2 class="sr-only">Experiencia</h2>
-              {{#each experience}}
+              {{#each experiences}}
                 <article {{#if printHidden}}class="print-hidden"{{/if}}>
                   <p class="timestamp">
                     <time
