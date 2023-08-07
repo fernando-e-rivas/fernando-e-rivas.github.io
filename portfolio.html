@@ -74,13 +74,10 @@
             </div>
 
             {{#if cads}}
-              <div class="container-max">
-                <div class="drawings">
-                  <h3>Planos</h3>
-                  {{#cads}}
-                    <img src="{{url}}" alt="{{description}}">
-                  {{/cads}}
-                </div>
+              <div class="drawings">
+                {{#cads}}
+                  <img src="{{url}}" alt="{{description}}">
+                {{/cads}}
               </div>
             {{/if}}
           </article>
