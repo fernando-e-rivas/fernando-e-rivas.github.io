@@ -26,3 +26,7 @@ body {
   margin: auto;
   padding-inline: var(--space-between-block-items);
 }
+
+.container-max {
+  padding-inline: var(--space-between-block-items);
+}

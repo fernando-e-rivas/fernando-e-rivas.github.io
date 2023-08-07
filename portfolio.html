@@ -20,7 +20,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <link rel="stylesheet" href="styles/fernandorivas-portfolio.css">
+    <link rel="stylesheet" href="styles/sections/portfolio.css">
+    <script type="module" src="scripts/portfolio.js"></script>
   </head>
   <body>
     <main id="app"></main>
@@ -28,25 +29,60 @@
       <section class="portfolio">
         {{#each projects}}
           <article>
-            <mr-perspective mr-url="{{cover.url}}" area-title="{{cover.description}}"></mr-perspective>
-            <h2>{{name}}</h2>
+            <div class="cover">
+              <div class="shade"></div>
+              <mr-perspective
+                mr-url="{{cover.url}}"
+                mr-width="1920"
+                mr-height="1080"
+                area-title="{{cover.description}}">
+              </mr-perspective>
+              <div class="title">
+                <h2>
+                  {{#if shortName}}
+                    {{shortName}}
+                  {{else}}
+                    {{name}}
+                  {{/if}}
+                </h2>
+                {{#if shortName}}
+                  {{#if name}}
+                    <p>{{name}}</p>
+                  {{/if}}
+                {{/if}}
+              </div>
+            </div>
+
             <div class="container">
               {{#sections }}
+                <div class="content">
+                  {{#if title}}
+                    <h3>{{title}}</h3>
+                  {{/if}}
+                  {{#if content}}
+                    {{#content}}
+                      <p>{{this}}</p>
+                    {{/content}}
+                  {{/if}}
+                </div>
+              <div class="gallery">
                 {{#imgs}}
                   <img src="{{url}}" alt="{{description}}">
                 {{/imgs}}
-                {{#content}}
-                  <p>{{this}}</p>
-                {{/content}}
+              </div>
+              {{/sections}}
+            </div>
+
+            {{#if cads}}
+              <div class="drawings">
                 {{#cads}}
                   <img src="{{url}}" alt="{{description}}">
                 {{/cads}}
-              {{/sections}}
-            </div>
+              </div>
+            {{/if}}
           </article>
         {{/each}}
       </section>
     </script>
-    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>

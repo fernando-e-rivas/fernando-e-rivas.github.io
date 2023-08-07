@@ -1,13 +1,12 @@
 import {
   Phone,
   DateTime,
-} from "../modules/classes.js";
+} from "./modules/classes.js";
+import "./modules/template7.min.js";
+import experiences from "./db/experiences.js";
+import skill from "./db/skills.js";
 
-import experiences from "./experiences.js";
-import projects from "./projects.js";
-import skill from "./skills.js";
-
-export default {
+const data = {
   name: "Fernando",
   name_middle: "Euclides",
   name_family: "Rivas",
@@ -35,7 +34,6 @@ export default {
     "Softwares para mantenimiento y uso interno del computador",
     "Utilitarios de Recuperación y Optimización de Disco",
   ],
-  projects,
   experiences,
   references: [
     {
@@ -55,3 +53,10 @@ export default {
     },
   ]
 };
+
+const app = document.getElementById('app');
+const template = document.getElementById('template');
+const compiled = Template7(template.innerHTML).compile();
+const compiledRendered = compiled(data);
+
+app.innerHTML = compiledRendered;
