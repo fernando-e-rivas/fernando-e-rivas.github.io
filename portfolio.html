@@ -37,21 +37,39 @@
                 mr-height="1080"
                 area-title="{{cover.description}}">
               </mr-perspective>
-              <h2 class="title">{{name}}</h2>
+              <div class="title">
+                <h2>
+                  {{#if shortName}}
+                    {{shortName}}
+                  {{else}}
+                    {{name}}
+                  {{/if}}
+                </h2>
+                {{#if shortName}}
+                  {{#if name}}
+                    <p>{{name}}</p>
+                  {{/if}}
+                {{/if}}
+              </div>
             </div>
+
             <div class="container">
               {{#sections }}
-                <div class="gallery">
-                  {{#imgs}}
-                    <img src="{{url}}" alt="{{description}}">
-                  {{/imgs}}
+                <div class="content">
+                  {{#content}}
+                    <p>{{this}}</p>
+                  {{/content}}
                 </div>
-                {{#content}}
-                  <p>{{this}}</p>
-                {{/content}}
-                {{#cads}}
+              <div class="gallery">
+                {{#imgs}}
                   <img src="{{url}}" alt="{{description}}">
-                {{/cads}}
+                {{/imgs}}
+              </div>
+                <div class="drawings">
+                  {{#cads}}
+                    <img src="{{url}}" alt="{{description}}">
+                  {{/cads}}
+                </div>
               {{/sections}}
             </div>
           </article>
