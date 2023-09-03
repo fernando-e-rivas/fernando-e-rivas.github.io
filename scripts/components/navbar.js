@@ -9,6 +9,11 @@ const routes = [
     url: '/portfolio.html',
     value: 'portfolio',
   },
+  {
+    name: "Project",
+    url: '/project.html',
+    value: 'project',
+  },
 ]
 
 export default class Navbar extends HTMLElement {

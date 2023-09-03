@@ -28,61 +28,33 @@
     <main id="app"></main>
     <script id="template" type="text/template">
       <section class="portfolio">
-        {{#each projects}}
-          <article>
-            <div class="cover">
-              <div class="shade"></div>
-              <mr-perspective
-                mr-url="{{cover.url}}"
-                mr-width="1920"
-                mr-height="1080"
-                area-title="{{cover.description}}">
-              </mr-perspective>
-              <div class="title">
-                <h2>
-                  {{#if shortName}}
-                    {{shortName}}
-                  {{else}}
-                    {{name}}
-                  {{/if}}
-                </h2>
-                {{#if shortName}}
-                  {{#if name}}
-                    <p>{{name}}</p>
-                  {{/if}}
-                {{/if}}
-              </div>
-            </div>
-
-            <div class="container">
-              {{#sections }}
-                <div class="content">
-                  {{#if title}}
-                    <h3>{{title}}</h3>
-                  {{/if}}
-                  {{#if content}}
-                    {{#content}}
-                      <p>{{this}}</p>
-                    {{/content}}
-                  {{/if}}
+        <div class="container">
+          <!-- <h1>Portafolio</h1> -->
+          <div class="gallery">
+            {{#each projects}}
+              <article>
+                  <img
+                    src="{{cover.thumbUrl}}"
+                  >
+                  <div class="title">
+                    <h2>
+                      {{#if shortName}}
+                        {{shortName}}
+                      {{else}}
+                        {{name}}
+                      {{/if}}
+                    </h2>
+                    {{#if shortName}}
+                      {{#if name}}
+                        <p>{{name}}</p>
+                      {{/if}}
+                    {{/if}}
+                  </div>
                 </div>
-              <div class="gallery">
-                {{#imgs}}
-                  <img src="{{url}}" alt="{{description}}">
-                {{/imgs}}
-              </div>
-              {{/sections}}
-            </div>
-
-            {{#if cads}}
-              <div class="drawings">
-                {{#cads}}
-                  <img src="{{url}}" alt="{{description}}">
-                {{/cads}}
-              </div>
-            {{/if}}
-          </article>
-        {{/each}}
+              </article>
+            {{/each}}
+          </div>
+        </div>
       </section>
     </script>
   </body>
