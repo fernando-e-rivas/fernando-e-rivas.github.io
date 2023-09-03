@@ -1,13 +1,13 @@
 import "./modules/template7.min.js";
 import Navbar from "./components/navbar.js";
-import inabima from "./projects/inabima.js";
+import { projectsPreview } from "./projects/index.js";
 
 window.customElements.define('mr-navbar', Navbar);
 
+console.log(projectsPreview)
+
 const data = {
-  projects: [
-    inabima,
-  ],
+  projects: projectsPreview,
 };
 
 const app = document.getElementById('app');

@@ -1,8 +1,8 @@
 export default {
-  id: 'inabima',
-  name: "Instituto Nacional de Bienestar Magisterial",
-  shortName: "INABIMA",
-  description: "Diseño, Coordinación y Supervisión General del Centro Odontológico, Apoyo Emocional, Salón de Eventos, Salón Consejo de Directores y Oficinas Administrativas del Instituto Nacional de Bienestar Magisterial (INABIMA), en Av. Pedro Henríquez Ureña No. 73 (Plaza Aurora).",
+  id: 'jce',
+  name: "Junta Central Electoral",
+  shortName: "JCE",
+  description: "Intervencion en la Remodelacion y Adecuacion de espacios adquiridos para localizar los elementos basicos de la Institucion (Oficialias, Juntas Electorales y Centros de Cedulacion) en toda la geografia nacional, asi como algunos mas especializados, como son los Centros de Servicios Regionales, y finalmente, la colaboracion en la elaboracion de un Modelo Institucional, notorio en su aspecto y optima distribucion, para identificar la institucion con una nueva imagen.",
   cover: {
     url: "https://placehold.co/1920x1080",
     thumbUrl: "https://placehold.co/350x197",

@@ -9,11 +9,6 @@ const routes = [
     url: '/portfolio.html',
     value: 'portfolio',
   },
-  {
-    name: "Project",
-    url: '/project.html',
-    value: 'project',
-  },
 ]
 
 export default class Navbar extends HTMLElement {
@@ -29,19 +24,21 @@ export default class Navbar extends HTMLElement {
     routes.forEach(item => {
       links += `
       <li>
-        <a ${item.value !== current ? `href="${item.url}"` : '' }>${item.name}</a>
+        <a ${item.value !== current ? `target="_self" href="${item.url}"` : '' }>${item.name}</a>
       </li>
       `
     })
 
     this.innerHTML = `
     <nav>
-      <a href="/" class="branding">
-        <img src="img/logo.svg" alt="Logo Arcad" />
-      </a>
-      <ul>
-        ${links}
-      </ul>
+      <div class="container-max">
+        <a href="/" class="branding">
+          <img src="img/logo.svg" alt="Logo Arcad" />
+        </a>
+        <ul>
+          ${links}
+        </ul>
+      </div>
     </nav>
     `;
   };

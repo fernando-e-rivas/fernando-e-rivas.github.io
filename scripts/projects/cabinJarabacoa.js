@@ -1,8 +1,8 @@
 export default {
-  id: 'inabima',
-  name: "Instituto Nacional de Bienestar Magisterial",
-  shortName: "INABIMA",
-  description: "Diseño, Coordinación y Supervisión General del Centro Odontológico, Apoyo Emocional, Salón de Eventos, Salón Consejo de Directores y Oficinas Administrativas del Instituto Nacional de Bienestar Magisterial (INABIMA), en Av. Pedro Henríquez Ureña No. 73 (Plaza Aurora).",
+  id: 'cabin-jarabacoa',
+  name: "Cabaña Jarabacoa",
+  shortName: undefined,
+  description: "Cabaña para huéspedes, en 2 niveles, con habitacion principal, sala, comedor, area lavado, deposito, y dormitorio múltiple con su baño en un nivel bajo, ante una gran pendiente en la montaña, en residencia privada, conectada a vivienda principal por una gran pendiente, a traves de una gran escalinata en mampostería.",
   cover: {
     url: "https://placehold.co/1920x1080",
     thumbUrl: "https://placehold.co/350x197",

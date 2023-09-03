@@ -29,12 +29,12 @@
     <script id="template" type="text/template">
       <section class="portfolio">
         <div class="container">
-          <!-- <h1>Portafolio</h1> -->
           <div class="gallery">
             {{#each projects}}
-              <article>
+              <a href="./project.html?id={{id}}" target="_self">
                   <img
                     src="{{cover.thumbUrl}}"
+                    alt="{{cover.description}}"
                   >
                   <div class="title">
                     <h2>
@@ -51,7 +51,7 @@
                     {{/if}}
                   </div>
                 </div>
-              </article>
+              </a>
             {{/each}}
           </div>
         </div>

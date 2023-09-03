@@ -13,25 +13,6 @@ section.portfolio {
     letter-spacing: 2px;
     color: var(--accent-color);
   }
-  
-  & article {
-    & .title {
-      text-transform: uppercase;
-      color: #222;
-      
-      & h2 {
-        margin: 0;
-        font-weight: 400;
-        font-size: 1.25rem;
-      }
-
-      & p {
-        margin: 0;
-        font-weight: 300;
-        font-size: 1rem;
-      }
-    }
-  }
 
   & img {
     max-width: 100%;
@@ -45,8 +26,27 @@ section.portfolio {
     margin-block: 2.5rem;
     gap: 2rem;
     
-    & article {
+    & a {
       width: calc(100% / 3 - 1.4rem);
+      display: block;
+      text-decoration: none;
+      color: #222;
+
+      & .title {
+        text-transform: uppercase;
+        
+        & h2 {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.25rem;
+        }
+  
+        & p {
+          margin: 0;
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
