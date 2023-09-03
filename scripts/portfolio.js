@@ -4,8 +4,6 @@ import { projectsPreview } from "./projects/index.js";
 
 window.customElements.define('mr-navbar', Navbar);
 
-console.log(projectsPreview)
-
 const data = {
   projects: projectsPreview,
 };

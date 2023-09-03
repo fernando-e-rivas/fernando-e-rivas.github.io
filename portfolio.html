@@ -32,24 +32,14 @@
           <div class="gallery">
             {{#each projects}}
               <a href="./project.html?id={{id}}" target="_self">
-                  <img
-                    src="{{cover.thumbUrl}}"
-                    alt="{{cover.description}}"
-                  >
-                  <div class="title">
-                    <h2>
-                      {{#if shortName}}
-                        {{shortName}}
-                      {{else}}
-                        {{name}}
-                      {{/if}}
-                    </h2>
-                    {{#if shortName}}
-                      {{#if name}}
-                        <p>{{name}}</p>
-                      {{/if}}
-                    {{/if}}
-                  </div>
+                <img
+                  src="{{cover.thumbUrl}}"
+                  alt="{{cover.description}}"
+                >
+                <div class="title">
+                  <h2>
+                    {{name}}
+                  </h2>
                 </div>
               </a>
             {{/each}}
