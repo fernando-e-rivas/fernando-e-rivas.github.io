@@ -7,7 +7,6 @@ export default class Perspective extends HTMLElement {
     `;
   };
 
-
   updateComponent() {
     const imgNode = this.querySelector(".img");
     const bgcolor = this.getAttribute(`mr-bgcolor`);

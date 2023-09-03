@@ -5,6 +5,9 @@ import {
 import "./modules/template7.min.js";
 import experiences from "./db/experiences.js";
 import skill from "./db/skills.js";
+import Navbar from "./components/navbar.js";
+
+window.customElements.define('mr-navbar', Navbar);
 
 const data = {
   name: "Fernando",

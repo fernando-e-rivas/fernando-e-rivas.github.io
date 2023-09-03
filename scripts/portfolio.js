@@ -1,8 +1,10 @@
 import "./modules/template7.min.js";
 import Perspective from "./components/perspective.js";
+import Navbar from "./components/navbar.js";
 import inabima from "./projects/inabima.js";
 
 window.customElements.define('mr-perspective', Perspective);
+window.customElements.define('mr-navbar', Navbar);
 
 const data = {
   projects: [
