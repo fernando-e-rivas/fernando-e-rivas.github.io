@@ -1,6 +1,6 @@
 export default {
   id: 'icpv',
-  name: "Iglesia Cristiana Palabra de Vida Oriental",
+  name: "Iglesia Cristiana Palabra de Vida (Oriental)",
   shortName: "ICPV",
   description: "",
   cover: {

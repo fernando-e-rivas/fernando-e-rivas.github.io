@@ -1,6 +1,6 @@
 export default {
   id: 'res-los-tres-ojos',
-  name: "Residencia Los Tres Ojos",
+  name: "Complejo de Apartamentos en Los Tres Ojos",
   description: "",
   cover: {
     url: "https://placehold.co/1920x1080",
