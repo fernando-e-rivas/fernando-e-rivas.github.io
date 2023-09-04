@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-DO">
   <head>
     <meta charset="utf-8">
     <title>Fernando Rivas</title>
@@ -61,6 +61,18 @@
                 <div class="content">
                   {{#if title}}
                     <h3>{{title}}</h3>
+                  {{/if}}
+                  {{#if date}}
+                    {{#date}}
+                      <p class="timestamp">
+                        <time
+                          datetime="{{iso}}"
+                          title="{{iso}}"
+                        >
+                          {{display}}
+                        </time>
+                      </p>
+                    {{/date}}
                   {{/if}}
                   {{#if content}}
                     {{#content}}

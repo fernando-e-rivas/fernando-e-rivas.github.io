@@ -22,12 +22,14 @@ export class Phone {
 }
 
 export class DateTime {
-  constructor(date = "Actual"){
+  constructor(date = "Actual", format="year"){
     if(date === "Actual"){
       this.display = date;
-    } else {
+    } else if(format === 'year') {
       this.display = new Date(date).getFullYear();
-    }
+    } else if(format === 'month') {
+    this.display = new Date(date).toLocaleDateString('es-do', { year:"numeric", month:"long"})
+  }
   }
   get iso() {
     if(this.display === "Actual"){

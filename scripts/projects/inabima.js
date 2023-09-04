@@ -21,50 +21,14 @@ export default {
         "En su 1er nivel estan ubicadas las Oficinas Administrativas propias de la Institucion.",
       ],
       imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
       ],
     },
     {
       title: "2do Nivel",
       content: [
-        "La parte fundamental de este proyecto, esta localizada en su 2do nivel, donde se ubican quince (15) unidades Odontologicas, incluyendo dos (2) para Cirugia, con el apoyo de Sala de Espera, Atencion al Publico, Baños Publico y de uso interno, Almacenes Administrativo y de Elementos Odontologicos, Area de Rayos X, Monitoreo de Equipos, Cocina y Comedor, incluyendo de manera prioritaria la accesibilidad sin fronteras, con la incorporacion de Ascensor, Baños para Discapacitados, entre otros.",
+        "La parte fundamental de este proyecto, esta localizada en su 2do nivel, donde se ubican quince unidades Odontologicas, incluyendo dos para Cirugia, con el apoyo de Sala de Espera, Atencion al Publico, Baños Publico y de uso interno, Almacenes Administrativo y de Elementos Odontologicos, Area de Rayos X, Monitoreo de Equipos, Cocina y Comedor, incluyendo de manera prioritaria la accesibilidad sin fronteras, con la incorporacion de Ascensor, Baños para Discapacitados, entre otros.",
       ],
       imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 3",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
       ],
     },
     {
@@ -73,18 +37,6 @@ export default {
         "En su 3er nivel operan mayormente las Unidades de Atencion Emocional, asi como un gran Salon de Eventos, de Consejo de Directores, Espera, Baños Publico y de uso interno, Cocinilla, entre otros.",
       ],
       imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
       ],
     },
     {
@@ -93,18 +45,6 @@ export default {
         "Tambien se maneja un gran area en su azotea para manejo y colocacion de Equipos (Aire Acondicionado  Central tipo VRF, Unidades de Aire de Precision para Data Center, Unidades de Aire Comprimido, Bombas de Succion, Planta Electrica de Emergencia, Sistema de Tratamiento Osmosis y otros).",
       ],
       imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 3",
-        },
       ],
     },
   ],

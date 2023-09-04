@@ -13,7 +13,7 @@ const data = {
   name: "Fernando",
   name_middle: "Euclides",
   name_family: "Rivas",
-  dob: new DateTime("9/03/1964"),
+  dob: new DateTime("03/09/1964"),
   website: {
     url: "https://fernando-e-rivas.github.io/",
     display: "fernando-e-rivas.github.io",

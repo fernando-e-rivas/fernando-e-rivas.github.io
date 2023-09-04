@@ -10,6 +10,7 @@ body {
   --space-between-block-items: 1rem;
   --space-between-inline-items: 0.5rem;
   --accent-color: #382e66;
+  --low-contrast-color: #a1a1a1;
   --border-color: #ccc;
 }
 

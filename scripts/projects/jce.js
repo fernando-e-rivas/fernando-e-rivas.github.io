@@ -1,3 +1,8 @@
+import {
+  Location,
+  DateTime,
+} from "../modules/classes.js";
+
 export default {
   id: 'jce',
   name: "Junta Central Electoral",
@@ -16,96 +21,49 @@ export default {
   ],
   sections: [
     {
-      title: "1er Nivel",
+      title: "1ra Oficialía del Estado Civil",
+      date: new DateTime("07/01/2008", "month"),
       content: [
-        "En su 1er nivel estan ubicadas las Oficinas Administrativas propias de la Institucion.",
+        "Diseño y Ejecución Remodelación espacio para alojar dicho organismo, así como un centro de Cedulación, en 2 niveles, Oficinas administrativas, Archivos, Baños público y de uso privado, Recepción y espera Público, Cobros.",
+        "Calle Danae esquina calle Santiago, Santo Domingo, Distrito Nacional.",
       ],
-      imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-      ],
+      imgs: [],
     },
     {
-      title: "2do Nivel",
+      title: "2da Oficialía del Estado Civil",
+      date: new DateTime("11/01/2007", "month"),
       content: [
-        "La parte fundamental de este proyecto, esta localizada en su 2do nivel, donde se ubican quince (15) unidades Odontologicas, incluyendo dos (2) para Cirugia, con el apoyo de Sala de Espera, Atencion al Publico, Baños Publico y de uso interno, Almacenes Administrativo y de Elementos Odontologicos, Area de Rayos X, Monitoreo de Equipos, Cocina y Comedor, incluyendo de manera prioritaria la accesibilidad sin fronteras, con la incorporacion de Ascensor, Baños para Discapacitados, entre otros.",
+        "Diseño y Ejecución Remodelación espacio para alojar dicho organismo, así como un centro de Cedulación, en 3 niveles, Oficinas administrativas, Archivos, Baños público y de uso privado, Recepción y espera Público, Cobros, Delegación de Defunciones.",
+        "Calle Dr. Delgado esquina Av. 27 de Febrero, Santo Domingo, Distrito Nacional.",
       ],
-      imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 3",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-      ],
+      imgs: [],
     },
     {
-      title: "3er Nivel",
+      title: "3ra Oficialía del Estado Civil",
+      date: new DateTime("11/01/2008", "month"),
       content: [
-        "En su 3er nivel operan mayormente las Unidades de Atencion Emocional, asi como un gran Salon de Eventos, de Consejo de Directores, Espera, Baños Publico y de uso interno, Cocinilla, entre otros.",
+        "Diseño y Ejecución Remodelación espacio para alojar dicho organismo, así como un centro de Cedulación, en 2 niveles, Oficinas administrativas, Baños público y de uso privado, Archivos, Recepción y espera Público, Cobros.",
+        "Calle 14 Norte esquina 31 Oeste, Ensanche Luperón, Santo Domingo, Distrito Nacional.",
       ],
-      imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-      ],
+      imgs: [],
     },
     {
-      title: "Azotea",
+      title: "EFEC (Escuela Nacional de Formación Electoral y del Estado Civil)",
+      date: new DateTime("02/01/2008", "month"),
       content: [
-        "Tambien se maneja un gran area en su azotea para manejo y colocacion de Equipos (Aire Acondicionado  Central tipo VRF, Unidades de Aire de Precision para Data Center, Unidades de Aire Comprimido, Bombas de Succion, Planta Electrica de Emergencia, Sistema de Tratamiento Osmosis y otros).",
+        "Remodelación espacio para integrar a la edificación un Salón de Eventos, así como reordenamiento y mejoramiento físico de algunos espacios internos.",
+        "Calle Eduardo Martínez Saviñón esquina Florinda Soriano, La Castellana, Santo Domingo, Distrito Nacional.",
       ],
-      imgs: [
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 1",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 2",
-        },
-        {
-          url: "https://placehold.co/1920x1080",
-          description: "Preview del Proyecto 3",
-        },
+      imgs: [],
+    },
+    {
+      title: "Centro de Servicios y Legalizaciones (de caracter regional)",
+      date: new DateTime("06/01/2008", "month"),
+      content: [
+        "Diseño y Ejecución Remodelación espacio para alojar dicho organismo, así como un centro de Cedulación, en un nivel, Oficinas administrativas, Recepción y espera Público, Cobros.",
+        "Carretera Mella, Plaza Lumiere, Santo Domingo Este.",
       ],
+      imgs: [],
     },
   ],
 };
