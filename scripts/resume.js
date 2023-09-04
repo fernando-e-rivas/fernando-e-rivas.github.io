@@ -5,12 +5,15 @@ import {
 import "./modules/template7.min.js";
 import experiences from "./db/experiences.js";
 import skill from "./db/skills.js";
+import Navbar from "./components/navbar.js";
+
+window.customElements.define('mr-navbar', Navbar);
 
 const data = {
   name: "Fernando",
   name_middle: "Euclides",
   name_family: "Rivas",
-  dob: new DateTime("9/03/1964"),
+  dob: new DateTime("03/09/1964"),
   website: {
     url: "https://fernando-e-rivas.github.io/",
     display: "fernando-e-rivas.github.io",

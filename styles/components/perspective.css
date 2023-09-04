@@ -19,7 +19,6 @@ mr-perspective {
     position: relative;
     transform-style: preserve-3d;
     box-shadow: -8px 22px 12px rgba(0, 0, 0, 0.2);
-  }
   
     &:before,
     &:after {
@@ -27,7 +26,7 @@ mr-perspective {
       display: block;
       position: absolute;
     }
-  
+
     &:before {
       height: 100%;
       width: var(--depth);
@@ -40,7 +39,7 @@ mr-perspective {
       background-color: #eee;
       opacity: .4;
     }
-  
+
     &:after {
       background-color: #bbb;
       height: var(--depth);

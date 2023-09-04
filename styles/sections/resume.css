@@ -95,7 +95,7 @@ section.resume {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #aaa;
+    color: var(--low-contrast-color);
   }
 }
 

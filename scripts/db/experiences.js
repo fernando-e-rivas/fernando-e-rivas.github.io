@@ -7,7 +7,7 @@ import place from "./places.js";
 
 export default [
   {
-    start_date: new DateTime("01/04/2011"),
+    start_date: new DateTime("04/01/2011"),
     end_date: new DateTime(),
     title: "Supervisor Nacional",
     location: place.minerd,
@@ -16,7 +16,7 @@ export default [
     ],
   },
   {
-    start_date: new DateTime("01/04/2011"),
+    start_date: new DateTime("04/01/2011"),
     end_date: new DateTime(),
     title: "Encargado Supervisión y Diseño",
     location: place.minerd,
@@ -36,7 +36,7 @@ export default [
     ],
   },
   {
-    start_date: new DateTime("01/02/2007"),
+    start_date: new DateTime("02/01/2007"),
     end_date: new DateTime("01/01/2011"),
     title: "Coordinador Unidad Especial de Remodelación de Oficialías",
     location: place.jce,
@@ -50,8 +50,8 @@ export default [
     ],
   },
   {
-    start_date: new DateTime("01/04/1994"),
-    end_date: new DateTime("01/02/2007"),
+    start_date: new DateTime("04/01/1994"),
+    end_date: new DateTime("02/01/2007"),
     title: "",
     location: place.perezMorales,
     description: [
