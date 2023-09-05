@@ -13,7 +13,7 @@ export default {
     "Familia Abreu",
   ),
   famLescayCastillo: new Location(
-    "Familia LescayCastillo",
+    "Familia Lescay-Castillo",
   ),
   // ---------------------- G
   // ---------------------- H
