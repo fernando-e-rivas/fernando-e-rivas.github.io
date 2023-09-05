@@ -18,8 +18,8 @@ export default [
   {
     start_date: new DateTime("04/01/2011"),
     end_date: new DateTime(),
-    title: "Encargado Supervisión y Diseño ------",
-    location: place.minerd,
+    title: "Encargado Supervisión y Diseño",
+    location: place.inabima,
     description: [
       "Remodelación y adaptación edificio de usos múltiples (2017-2020) (Centro odontológico para 15 unidades, incluyendo 2 áreas de cirugía, Servicios de atención emocional, Salón multiusos, salón del Consejo, Oficinas administrativas, Salas de espera, Ascensor para discapacitados, Baños público de apoyo a las diferentes áreas, incluyendo para discapacitados, Cocinas-comedor, Monitoreo de equipos digital, Sistema de tratamiento de agua por Osmosis).",
       "Calle Pedro Henríquez Ureña # 73, Plaza Aurora (2 pisos encima laboratorio Amadita)"
