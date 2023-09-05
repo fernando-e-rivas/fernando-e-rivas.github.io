@@ -7,6 +7,12 @@ export default {
     18.4609793,
     -69.9117334
   ),
+  inabima: new Location(
+    "Instituto Nacional De Bienestar Magisterial",
+    "INABIMA",
+    18.4718224,
+    -69.9134736,
+  ),
   jce: new Location(
     "Junta Central Electoral",
     "JCE",
