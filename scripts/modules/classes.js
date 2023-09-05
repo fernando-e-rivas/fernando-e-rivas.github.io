@@ -29,7 +29,11 @@ export class DateTime {
     } else if(format === 'year') {
       this.display = new Date(date).getFullYear();
     } else if(format === 'month') {
-      this.display = new Date(date).toLocaleDateString('es-do', { year:"numeric", month:"long"})
+      this.display = new Date(date).toLocaleDateString('es-do',
+      {
+        year:"numeric",
+        month:"long"
+      })
     }
   }
   get iso() {

@@ -1,12 +1,11 @@
 import {
-  Location,
   DateTime,
 } from "../modules/classes.js";
+import places from "../db/places.js";
 
 export default {
+  ...places.jce,
   id: 'jce',
-  name: "Junta Central Electoral",
-  shortName: "JCE",
   description: "Intervencion en la Remodelacion y Adecuacion de espacios adquiridos para localizar los elementos basicos de la Institucion (Oficialias, Juntas Electorales y Centros de Cedulacion) en toda la geografia nacional, asi como algunos mas especializados, como son los Centros de Servicios Regionales, y finalmente, la colaboracion en la elaboracion de un Modelo Institucional, notorio en su aspecto y optima distribucion, para identificar la institucion con una nueva imagen.",
   cover: {
     url: "https://placehold.co/1920x1080",

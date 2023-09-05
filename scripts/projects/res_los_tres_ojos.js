@@ -1,6 +1,8 @@
+import places from "../db/places.js";
+
 export default {
+  ...places.resLosTresOjos,
   id: 'res-los-tres-ojos',
-  name: "Complejo de Apartamentos en Los Tres Ojos",
   description: "",
   cover: {
     url: "https://placehold.co/1920x1080",

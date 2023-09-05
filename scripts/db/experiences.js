@@ -1,5 +1,4 @@
 import {
-  Location,
   DateTime,
 } from "../modules/classes.js";
 
@@ -30,7 +29,7 @@ export default [
     start_date: new DateTime("01/01/2020"),
     end_date: new DateTime("01/01/2023"),
     title: "",
-    location: new Location(),
+    location: place.empty,
     description: [
       "Diseño y ejecución edificio 3 niveles con supervisión y licencia de todos los procesos por Obras Publicas, 1 apartamento 1er nivel con 2 parqueos, 2 apartamentos por piso en 2do y 3er nivel con 1 parqueo por apartamento, área recreativa común en azotea.",
     ],
@@ -122,27 +121,27 @@ export default [
     start_date: new DateTime("01/01/1975"),
     end_date: new DateTime("01/01/1981"),
     title: "Bachiller en Ciencias y Letras",
-    location: new Location("Liceo Experimental Altagracia Amelia Ricart Calventi", "UASD"),
+    location: place.leaarc,
   },
   {
     printHidden: true,
     start_date: new DateTime("01/01/1996"),
     end_date: new DateTime("01/01/1996"),
     title: "Ingles Básico y Avanzado",
-    location: new Location("Instituto Cultural Dominico-Americano", "ICDA"),
+    location: place.icda,
   },
   {
     start_date: new DateTime("01/01/1983"),
     end_date: new DateTime("01/01/1989"),
     title: "Arquitecto",
-    location: new Location("Universidad Autónoma de Santo Domingo", "UASD"),
+    location: place.uasd,
   },
   {
     printHidden: true,
     start_date: new DateTime("01/01/1989"),
     end_date: new DateTime("01/01/1989"),
     title: "Técnico Cartógrafo",
-    location: new Location("Escuela Cartográfica del DMA-IAGS, Fort Clayton, Panamá"),
+    location: place.panama,
     description: [
       "Mejor puntuación de la clase"
     ],

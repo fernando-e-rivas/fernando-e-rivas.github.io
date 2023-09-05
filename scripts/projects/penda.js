@@ -1,6 +1,8 @@
+import places from "../db/places.js";
+
 export default {
+  ...places.penda,
   id: 'penda',
-  name: "Residencia Penda",
   description: "",
   cover: {
     url: "https://placehold.co/1920x1080",

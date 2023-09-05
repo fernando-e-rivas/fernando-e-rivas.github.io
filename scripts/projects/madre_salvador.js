@@ -1,6 +1,8 @@
+import places from "../db/places.js";
+
 export default {
+  ...places.madre,
   id: 'madre-salvador',
-  name: "Iglesia Madre del Salvador",
   description: "",
   cover: {
     url: "https://placehold.co/1920x1080",

@@ -1,7 +1,8 @@
+import places from "../db/places.js";
+
 export default {
+  ...places.icpv,
   id: 'icpv',
-  name: "Iglesia Cristiana Palabra de Vida (Oriental)",
-  shortName: "ICPV",
   description: "",
   cover: {
     url: "https://placehold.co/1920x1080",
